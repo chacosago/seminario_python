@@ -1,0 +1,1 @@
+# Repositorio de práctica del seminario de Python
