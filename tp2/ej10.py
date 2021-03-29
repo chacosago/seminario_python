@@ -1,4 +1,3 @@
-import string
 def calc_puntaje_palabra(palabra):
     puntaje = 0
     if palabra.isalpha():
