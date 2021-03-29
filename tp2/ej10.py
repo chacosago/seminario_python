@@ -1,11 +1,9 @@
-#Escriba un programa que solicite por teclado una palabra y calcule el valor de la misma dada
 import string
-
 def calc_puntaje_palabra(palabra):
     puntaje = 0
     if palabra.isalpha():
         for letra in palabra:
-            puntaje = puntaje + puntajes[letra.upper()]
+            puntaje = puntaje + puntajes.get(letra.upper())
     return puntaje
 
 # Diccionario de puntajes por letra de Screbble
@@ -25,7 +23,8 @@ for i in "QZ":
     puntajes[i] = 10
 
 palabra = input("Ingrese palabra: ")
-
 puntaje = calc_puntaje_palabra(palabra)
-
-print(f"La palabra inrgesada es \"{palabra}\" y el puntaje asociado es {puntaje}")
+if puntaje != 0:
+    print(f"La palabra inrgesada es \"{palabra}\" y el puntaje asociado es {puntaje}")
+else:
+    print(f"La palabra \"{palabra}\" no es válida")
