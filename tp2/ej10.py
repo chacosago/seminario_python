@@ -22,9 +22,16 @@ for i in "JX":
 for i in "QZ":
     puntajes[i] = 10
 
-palabra = input("Ingrese palabra: ")
-puntaje = calc_puntaje_palabra(palabra)
-if puntaje != 0:
-    print(f"La palabra inrgesada es \"{palabra}\" y el puntaje asociado es {puntaje}")
-else:
-    print(f"La palabra \"{palabra}\" no es válida")
+# Programa principal
+
+palabra = input("Ingrese una palabra o \"FIN\" para terminar: ")
+while palabra != "FIN":
+    puntaje = calc_puntaje_palabra(palabra)
+    if puntaje != 0:
+        print(f"La palabra inrgesada es \"{palabra}\" y el puntaje asociado es {puntaje}")
+    else:
+        print(f"La palabra \"{palabra}\" no es válida")
+
+    palabra = input("Ingrese una palabra o \"FIN\" para terminar: ")
+
+
