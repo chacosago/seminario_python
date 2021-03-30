@@ -1,4 +1,7 @@
-def calc_puntaje_palabra(palabra):
+def calc_puntaje_palabra(palabra, puntajes):
+    """ Esta funcion calcula el puntaje de una palabra recibida por parametro
+    segun los puntajes por letra recibidos en un diccionario por parametro. 
+    """
     puntaje = 0
     if palabra.isalpha():
         for letra in palabra:
@@ -23,14 +26,14 @@ for i in "QZ":
 
 # Programa principal
 
-palabra = input("Ingrese una palabra o \"FIN\" para terminar: ")
-while palabra != "FIN":
-    puntaje = calc_puntaje_palabra(palabra)
+palabra = input("Ingrese una palabra o \"FIN!\" para terminar: ")
+while palabra != "FIN!":
+    puntaje = calc_puntaje_palabra(palabra, puntajes)
     if puntaje != 0:
         print(f"La palabra inrgesada es \"{palabra}\" y el puntaje asociado es {puntaje}")
     else:
         print(f"La palabra \"{palabra}\" no es válida")
 
-    palabra = input("Ingrese una palabra o \"FIN\" para terminar: ")
+    palabra = input("Ingrese una palabra o \"FIN!\" para terminar: ")
 
 
