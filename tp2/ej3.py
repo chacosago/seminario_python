@@ -17,7 +17,7 @@ letra = input("\nIngrese letra, se buscaran las palabas que inicien con ella, \"
 while letra != "FIN":
     if letra[0].isalpha() and len(letra) == 1:
         for palabra in palabras:
-            if (palabra[0] == letra) or (palabra[0] == letra.upper()) or (palabra[0] == letra.lower()):
+            if palabra.startswith(letra.lower()) or palabra.startswith(letra.upper()):
                 plabras_elegidas.append(palabra)
         if len(plabras_elegidas) > 0:
             print(f"Las palabras que inician con la letra \"{letra}\" son: \n {plabras_elegidas}")
@@ -27,6 +27,6 @@ while letra != "FIN":
         print(f"Error, usted NO ingreso una letra, inrgeso: \"{letra}\", intente nuevamente")
 
     letra = input("Ingrese letra, se buscaran las palabas que inicien con ella, \"FIN\" para terminar ")
-    plabras_elegidas = []
+    plabras_elegidas.clear()
     
 
