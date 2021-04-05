@@ -1,5 +1,16 @@
-texto = """
-ptive Technologies
+# Conoces Pypi? Es un sitio con gran variedad de librerías que podés instalar libremente a
+# través de la herramienta pip. Te permite buscar proyectos según el área de interés. Queremos
+# procesar esta lista de categorías como un string para poder saber las subcategorías tiene cada
+# una. Copia el contenido del archivo categorias como contenido de una variable string para
+# poder obtener información de la cantidad de subcategorías y la lista que incluye cada categoría.
+# Nota: no es necesario diferenciar las subcategorías que se encuentren anidadas.
+
+# Ver Ejemplo: De la categoría ‘Communications’ hay 23 subcategorías, y se debe contar con la lista
+# que se encuentran dentro de la misma.
+
+import string
+
+texto = """ptive Technologies
 Artistic Software
 Communications
 
@@ -295,5 +306,44 @@ Text Processing
         XML
         reStructuredText 
 
-Utilities 
+Utilities
 """
+
+lineas2 = texto.split("\n")
+""" lineas = lineas.copy()
+
+tabs_linea_max = 0
+tabs_linea = 0
+len_lineas_antes = len(lineas)
+aux = 0
+for linea in lineas:
+    tabs_linea = 0
+    if len(linea) <= 1:
+        print("No es printable:")
+        aux+=1
+        lineas.remove(linea)
+    else:
+        if linea.startswith(" "):
+            tabs_linea = linea.count("    ")
+            if tabs_linea > tabs_linea_max:
+                tabs_linea_max = tabs_linea
+        print(f"Nivel de categoria: {tabs_linea}. Linea: {linea}\n")
+
+print(f"Len de lineas: {len(lineas)} y antes era: {len_lineas_antes}, aux: {aux}, cant tabs max: {tabs_linea_max}\n\n") """
+
+############## Version B como en la practica simple:
+filtros = {}
+for cada_linea in lineas2:   
+    if not len(cada_linea) == 0:
+        if not cada_linea.split(' ')[0] == '':
+            filtros[cada_linea] = []
+            filtro_actual = cada_linea
+        else:
+             filtros[filtro_actual].append(cada_linea.strip())
+
+i = 1
+for cada_filtro in filtros.keys():
+    print(f"\n#  Categoria: {cada_filtro}\n{i:<2d} Cantidad elementos: {len(filtros.get(cada_filtro))}")
+    for n in filtros.get(cada_filtro):
+        print(f"     {n:<10}")
+    i+=1
