@@ -1,9 +1,8 @@
 #Retomamos el código visto en la teoría, que informaba si los caracteres “@” o “!” formaban
 #parte de una palabra ingresada:
-import string
 print("Version original:\n")
 
-cadena = input("Ingresa la clave (debe tener menos de 10 caracteres y no contener los símbolos:@ y !:")
+cadena = input("Ingresa la clave (debe tener menos de 10 caracteres y no contener los símbolos:@ ni !:")
 
 if len(cadena) > 10:
     print("Ingresaste más de 10 carcateres")

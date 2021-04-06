@@ -2,12 +2,12 @@
 #y sobre ella, informe la cantidad de palabras en las que se encuentra el string. No distingir
 #entre mayúsculas y minúsculas.
 
-from texto_en_palabras import texto_en_palabras
+import procesar_palabras
 
 frase = input("Ingrese una frase: ").lower()
 cadena = input("Ingrese la cadena: ").lower()
 
-palabras = texto_en_palabras(frase)
+palabras = procesar_palabras.texto_en_palabras(frase)
 cant = 0
 seleccionadas = []
 

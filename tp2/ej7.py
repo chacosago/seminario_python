@@ -2,8 +2,8 @@
 # 1. generar una estructura con los nombres de los estudiantes y la suma de ambas.
 # 2. Calcular el promedio de las notas totales e informar quiénes obtuvieron menos que el promedio notas. 
 
-from texto_en_palabras import texto_en_palabras
-from texto_en_palabras import texto_en_enteros
+
+import procesar_palabras
 
 nombres_str = """'Agustin',
  'Alan',
@@ -154,10 +154,10 @@ eval2_str = """
  10,
  """
 
-nombres_lista = texto_en_palabras(nombres_str.lower())
+nombres_lista = procesar_palabras.texto_en_palabras(nombres_str.lower())
 
-eval1_int = texto_en_enteros(eval1_str)
-eval2_int = texto_en_enteros(eval2_str)
+eval1_int = procesar_palabras.texto_en_enteros(eval1_str)
+eval2_int = procesar_palabras.texto_en_enteros(eval2_str)
 
 # Inciso 1:
 #forma 1, armando manualmente las tuplas:

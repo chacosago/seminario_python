@@ -1,7 +1,7 @@
 # Dada una frase donde las palabras pueden estar repetidas e indistintamente en mayúsculas y
 # minúsculas, imprimir una lista con todas las palabras sin repetir y en letra minúscula.
 
-from texto_en_palabras import texto_en_palabras 
+import procesar_palabras  
 
 frase = """
         Si trabajás mucho CON computadoras, eventualmente encontrarás que te gustaría
@@ -12,7 +12,7 @@ frase = """
         especializada con interfaz gráfica, o UN juego simple.
         """
 
-palabras = texto_en_palabras(frase.lower())
+palabras = procesar_palabras.texto_en_palabras(frase.lower())
 print(f"len() de la frase: {len(frase)}\n")
 print(f"len de palabras {len(palabras)}, y palabras:\n {palabras}\n")
 palabras_unicas = list(set(palabras))
