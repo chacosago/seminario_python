@@ -15,11 +15,6 @@ def inicializar_mapa_cercanias(mapa_cercanias):
         for fila in range(len(mapa_cercanias)):
             mapa_cercanias[fila] = mapa_cercanias[fila].replace("-","0")
 
-def imprimir_mapa(mapa_bombas):
-    if mapa_valido(mapa_bombas):
-        for i in mapa_bombas:
-            print(f"{i}\n")
-
 def conversion_a_matriz(mapa_bombas):
     if mapa_valido(mapa_bombas):
         for i in range(len(mapa_bombas)):
@@ -146,21 +141,18 @@ print(f"Mapa valido? {mapa_valido(mapa_bombas)}")
 mapa_cercanias2 = mapa_bombas.copy()
 inicializar_mapa_cercanias(mapa_cercanias2)
 conversion_a_matriz(mapa_cercanias2)
-#fila = 4
-#col = 5
 #print(f"Bombas alrededor de fila {fila} columna {col}: {contar_bombas_alrededor(mapa_bombas,fila,col)}")
-###
+
 procesar_mapa(mapa_cercanias2,cant_filas,cant_columnas)
 
-
 n = 1
-print("\nColumna:12345")
+print("\nColumna:1234567")
 for i in mapa_bombas:
     print(f"fila {n}: {i}")
     n+= 1
 n = 1
 print("\nMapa de Cercanias")
-print("Columna:12345")
+print("Columna:1234567")
 for i in mapa_cercanias2:
     print(f"fila {n}: {''.join(i)}")
     n+= 1
