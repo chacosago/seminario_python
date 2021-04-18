@@ -82,7 +82,10 @@ c = 0
 print("\nTener en cuenta que puede haber falsos positivos por tildes o simbolos\n")
 for i in lista_ordenada:
     c+=1
-    print(f'{c:3d} {i["Nombre"].capitalize():<30}{i.get("Apellido").capitalize():<30}{i.get("Mail"):<30}')
+    if opcion == 1:
+        print(f'{c:3d} {i["Nombre"].capitalize():<30}{i.get("Apellido").capitalize():<30}{i.get("Mail"):<40} {i.get("Comision")}')
+    else:
+        print(f'{c:3d} {i["Nombre"].capitalize():<30}{i.get("Apellido").capitalize():<30}{i.get("Legajo"):<10} {i.get("Mail"):<40}')
 
 # para que en Windows no cierre la ventana al terminar la ejecucion
 input("")
