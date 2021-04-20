@@ -18,8 +18,10 @@ for i in juegos_listados:
     c+=1
     print(f"{c:3d} Nombre: {i[3]:<70} Max jugadores: {i[index_max_player]:<3}")
 
-# 2)
+# 2) en proceso
 index_max_num_votes = encabezado.index('num_votes')
+index_image_url = encabezado.index('image_url')
+
 juegos_listados2 = sorted(csvreader,key= index_max_player)
 
 for i in juegos_listados2:
