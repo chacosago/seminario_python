@@ -1,9 +1,8 @@
-#url - "image_url") de los 10 juegos más votados (num_votes).
-
 import csv
-import collections
 
-archivo_csv = open("/home/hcastorp/Drive/Facultad/Informatica/Python/TP/otras-pruebas/actividad-20-abril/bgg_db_1806.csv", "r")
+ruta = "/home/hcastorp/Drive/Facultad/Informatica/Python/TP/otras-pruebas/actividad-20-abril/bgg_db_1806.csv"
+
+archivo_csv = open(ruta, "r")
 csvreader = csv.reader(archivo_csv, delimiter=',')
 # salteo y guardo el encabezado:
 encabezado = next(csvreader)
@@ -18,14 +17,20 @@ for i in juegos_listados:
     c+=1
     print(f"{c:3d} Nombre: {i[3]:<70} Max jugadores: {i[index_max_player]:<3}")
 
-# 2) en proceso
+# 2) hecho
+archivo_csv = open(ruta, "r")
+csvreader = csv.reader(archivo_csv, delimiter=',')
+# salteo y guardo el encabezado:
+encabezado = next(csvreader)
+
 index_max_num_votes = encabezado.index('num_votes')
 index_image_url = encabezado.index('image_url')
 
-juegos_listados2 = sorted(csvreader,key= index_max_player)
+juegos_listados2 = sorted(csvreader,key = lambda col : int(col[index_max_num_votes]), reverse = True)
 
-for i in juegos_listados2:
-    print(i[index_max_num_votes])
-
+c = 0
+for i in juegos_listados2[:10]:
+    c+=1
+    print(f"{c:3d} Votos:{i[index_max_num_votes]:<7} Nombre: {i[3]} Imagen: {i[index_image_url]}")
 
 archivo_csv.close()
