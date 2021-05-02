@@ -34,8 +34,11 @@ def loop():
             operaciones.guardar_json(rdo,"consulta-ted",enc)
             
         if event == "-ANIME-":
-
-            enc, rdo = operaciones.iniciar_consulta(operaciones.anime,"anime.csv")
+            try:
+                enc, rdo = operaciones.iniciar_consulta(operaciones.anime,"anime.csv")
+            except FileNotFoundError:   
+                archivo_no_encontrado.start()
+                continue
             operaciones.guardar_json(rdo,"consulta-anime",enc)
 
     return window
