@@ -4,6 +4,11 @@ import json
 import collections
 import requests
 
+# se que estas consultas se podrian implementar de manera mas simple, 
+# pero lo hice antes de ver la clase del lunes 26/4. 
+# Tambien se que deberia haber hecho mas de un archivo para mantener el criterio de la
+# estructura de carpetas que arme, por tema de tiempo no lo rearmo. 
+
 def iniciar_consulta(nombre_consulta,archivo_nom):
     """ La funcion recibe una funcion y un nombre de archivo como parametro y retorna una tupla
     con el encabezado y el resultado de aplicar la consulta correspondiente como lista.
