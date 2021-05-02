@@ -1,6 +1,6 @@
 import PySimpleGUI as sg
 from src.windows import menu
-from src.component import board
+from src.handlers import operaciones
 
 
 def start():
@@ -20,18 +20,18 @@ def loop():
     while True:
         event, _values = window.read()
 
-        if event in (sg.WINDOW_CLOSED, "Exit", "-exit-"):
+        if event in (sg.WINDOW_CLOSED, "Exit", "-EXIT-"):
             break
 
-        if event == "-play-":
-            window.hide()
-            board.start()
-            window.un_hide()
+        if event == "-TED-":
 
-        if event == "-settings-":
-            pass
+            enc, rdo = operaciones.iniciar_consulta(operaciones.ted,"TED_Talk.csv")
+            operaciones.descargar_todas_img(rdo)
+            operaciones.guardar_json(rdo,"consulta-ted",enc)
+            
+        if event == "-ANIME-":
 
-        if event == "-score-":
-            pass
+            enc, rdo = operaciones.iniciar_consulta(operaciones.anime,"anime.csv")
+            operaciones.guardar_json(rdo,"consulta-anime",enc)
 
     return window
