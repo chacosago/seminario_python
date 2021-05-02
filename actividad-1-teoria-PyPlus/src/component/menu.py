@@ -1,7 +1,7 @@
 import PySimpleGUI as sg
 from src.windows import menu
 from src.handlers import operaciones
-
+from src.component import archivo_no_encontrado
 
 def start():
     """
@@ -16,7 +16,7 @@ def loop():
     Loop de la ventana de menú que capta los eventos al apretar las opciones
     """
     window = menu.build()
-
+    
     while True:
         event, _values = window.read()
 
@@ -24,8 +24,12 @@ def loop():
             break
 
         if event == "-TED-":
+            try:
+                enc, rdo = operaciones.iniciar_consulta(operaciones.ted,"TED_Talk.csv")
+            except FileNotFoundError:
+                archivo_no_encontrado.start()
+                continue
 
-            enc, rdo = operaciones.iniciar_consulta(operaciones.ted,"TED_Talk.csv")
             operaciones.descargar_todas_img(rdo)
             operaciones.guardar_json(rdo,"consulta-ted",enc)
             

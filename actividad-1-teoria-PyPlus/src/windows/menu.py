@@ -2,7 +2,7 @@ import PySimpleGUI as sg
 
 def build():
     """
-    Construye la ventana del menú del juego
+    Construye la ventana del menú
     """
     layout = [
         [sg.Button('Charlas TED', size=(50, 2), key="-TED-")],

@@ -1,0 +1,92 @@
+[
+    {
+        "anime_id": "33662",
+        "name": "Taka no Tsume 8: Yoshida-kun no X-Files",
+        "genre": "Comedy, Parody",
+        "type": "Movie",
+        "episodes": "1",
+        "rating": "10.00",
+        "members": "13"
+    },
+    {
+        "anime_id": "28977",
+        "name": "Gintama\u00b0",
+        "genre": "Action, Comedy, Historical, Parody, Samurai, Sci-Fi, Shounen",
+        "type": "TV",
+        "episodes": "51",
+        "rating": "9.25",
+        "members": "114262"
+    },
+    {
+        "anime_id": "9969",
+        "name": "Gintama&#039;",
+        "genre": "Action, Comedy, Historical, Parody, Samurai, Sci-Fi, Shounen",
+        "type": "TV",
+        "episodes": "51",
+        "rating": "9.16",
+        "members": "151266"
+    },
+    {
+        "anime_id": "32935",
+        "name": "Haikyuu!!: Karasuno Koukou VS Shiratorizawa Gakuen Koukou",
+        "genre": "Comedy, Drama, School, Shounen, Sports",
+        "type": "TV",
+        "episodes": "10",
+        "rating": "9.15",
+        "members": "93351"
+    },
+    {
+        "anime_id": "15417",
+        "name": "Gintama&#039;: Enchousen",
+        "genre": "Action, Comedy, Historical, Parody, Samurai, Sci-Fi, Shounen",
+        "type": "TV",
+        "episodes": "13",
+        "rating": "9.11",
+        "members": "81109"
+    },
+    {
+        "anime_id": "15335",
+        "name": "Gintama Movie: Kanketsu-hen - Yorozuya yo Eien Nare",
+        "genre": "Action, Comedy, Historical, Parody, Samurai, Sci-Fi, Shounen",
+        "type": "Movie",
+        "episodes": "1",
+        "rating": "9.10",
+        "members": "72534"
+    },
+    {
+        "anime_id": "918",
+        "name": "Gintama",
+        "genre": "Action, Comedy, Historical, Parody, Samurai, Sci-Fi, Shounen",
+        "type": "TV",
+        "episodes": "201",
+        "rating": "9.04",
+        "members": "336376"
+    },
+    {
+        "anime_id": "32796",
+        "name": "Shenmi Shijie Lixian Ji",
+        "genre": "Adventure, Comedy, Fantasy",
+        "type": "Movie",
+        "episodes": "1",
+        "rating": "9.00",
+        "members": "37"
+    },
+    {
+        "anime_id": "28891",
+        "name": "Haikyuu!! Second Season",
+        "genre": "Comedy, Drama, School, Shounen, Sports",
+        "type": "TV",
+        "episodes": "25",
+        "rating": "8.93",
+        "members": "179342"
+    },
+    {
+        "anime_id": "263",
+        "name": "Hajime no Ippo",
+        "genre": "Comedy, Drama, Shounen, Sports",
+        "type": "TV",
+        "episodes": "75",
+        "rating": "8.83",
+        "members": "157670"
+    }
+]
