@@ -1,0 +1,70 @@
+[
+    {
+        "Nick": "pepe",
+        "Edad": "22",
+        "G\u00e9nero": "Hombre",
+        "Configuracion": {
+            "Ancho": 6,
+            "Alto": 4,
+            "Coincidencias": "2 coicidencias",
+            "Tiempo": 80.0,
+            "Color_fondo": "#64bcd9",
+            "Color_botones": "#3498DB",
+            "Tipo_coincidencias": "Imagen/Imagen",
+            "Mensaje_ganaste": "\u00a1Enhorabuena!",
+            "Mensaje_perdiste": "\u00a1Que macana!",
+            "Ayuda": true
+        }
+    },
+    {
+        "Nick": "facu",
+        "Edad": "66",
+        "G\u00e9nero": "Hombre",
+        "Configuracion": {
+            "Ancho": 4,
+            "Alto": 3,
+            "Coincidencias": "2 coincidencias",
+            "Tiempo": 50,
+            "Color_fondo": "#45B39D",
+            "Color_botones": "#3498DB",
+            "Tipo_coincidencias": "Imagen/Imagen",
+            "Mensaje_ganaste": "\u00a1Felicidades!",
+            "Mensaje_perdiste": "\u00a1Que l\u00e1stima!",
+            "Ayuda": false
+        }
+    },
+    {
+        "Nick": "pipo",
+        "Edad": "33",
+        "G\u00e9nero": "Mujer",
+        "Configuracion": {
+            "Ancho": 4,
+            "Alto": 3,
+            "Coincidencias": "2 coicidencias",
+            "Tiempo": 10.0,
+            "Color_fondo": "#45B39D",
+            "Color_botones": "#3498DB",
+            "Tipo_coincidencias": "Imagen/Imagen",
+            "Mensaje_ganaste": "\u00a1Felicidades!",
+            "Mensaje_perdiste": "\u00a1Que l\u00e1stima!",
+            "Ayuda": true
+        }
+    },
+    {
+        "Nick": "juana",
+        "Edad": "33",
+        "G\u00e9nero": "Mujer",
+        "Configuracion": {
+            "Ancho": 4,
+            "Alto": 3,
+            "Coincidencias": "2 coicidencias",
+            "Tiempo": 50.0,
+            "Color_fondo": "#45B39D",
+            "Color_botones": "#3498DB",
+            "Tipo_coincidencias": "Imagen/Imagen",
+            "Mensaje_ganaste": "\u00a1Felicidades!",
+            "Mensaje_perdiste": "\u00a1Que l\u00e1stima!",
+            "Ayuda": false
+        }
+    }
+]

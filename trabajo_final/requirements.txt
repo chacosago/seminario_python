@@ -1,0 +1,5 @@
+PySimpleGUI==4.39.1
+requests==2.24.0
+Pillow==8.0.1
+pandas==1.2.4
+matplotlib==3.4.2
